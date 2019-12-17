@@ -1,3 +1,4 @@
+//  importing required modules
 const { Movie,validate } = require('../models/movie.model')
 const express = require('express')
 const router = express.Router() 

@@ -1,6 +1,7 @@
 const mongoose = require('mongoose')
 const Joi = require('@hapi/joi')
 
+// Model of our records
 const Movie = mongoose.model('Customer',new mongoose.Schema({
     name: {
         type: String,
@@ -16,6 +17,7 @@ const Movie = mongoose.model('Customer',new mongoose.Schema({
     }
 }))
 
+// Validation Function
 const validate = (movie) => {
     const schema = Joi.object({
         name: Joi.string().required(),
